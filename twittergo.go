@@ -109,7 +109,7 @@ func (c *Client) SetAppToken(token string) {
 	}
 }
 
-// Returns the current app-only auth token or an empty string.
+// GetAppToken returns the current app-only auth token or an empty string.
 // Must call FetchAppToken to populate this value before getting it.
 // You may call SetAppToken with the value returned by this call in order
 // to restore a previously-fetched bearer token to use.
